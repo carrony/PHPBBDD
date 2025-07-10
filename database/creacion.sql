@@ -37,7 +37,7 @@ create table vehiculos (
     matricula char(8) primary key,
     marca varchar(20) NOT NULL,
     modelo varchar(30) NOT NULL,
-    tipo enum('turismo','autobús', 'camion', 'furgón') not null,
+    tipo enum('turismo','autobús', 'camión', 'furgón') not null,
     color varchar(20) not null,
     fecha_matriculacion date default CURDATE(),
     cilindrada smallint unsigned,

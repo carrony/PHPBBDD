@@ -49,6 +49,13 @@
                 } else {
                     echo "<td> No</td>\n";
                 }
+                /*
+                if ($fila['itv_pasada']) {
+                    echo "<td> <input type='checkbox' checked> </td>\n";
+                } else {
+                    echo "<td> <input type='checkbox' ></td>\n";
+                }
+                */
                // echo "<td> ".($fila['itv_pasada']?'Sí':'No')."</td>";
 
                 echo "<td><a href='editar.php?matricula=".$fila['matricula']."' class='btn btn-primary'>Editar</a></td>\n";
