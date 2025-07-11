@@ -11,6 +11,7 @@ require_once('plantillas/cabecera.php');
     $apellido2 = $_POST['apellido2'];
     $fechaNac = $_POST['fechanac'];
     $email = $_POST['email'];
+    $dni = $_POST['dni'];
 
     // controles sobre los valores o validaciones
     ?>
@@ -20,13 +21,14 @@ require_once('plantillas/cabecera.php');
         <li>Nombre: <?=$nombre?></li>
         <li>Apellido1: <?=$apellido1?></li>
         <li>Apellido2: <?=$apellido2?></li>
+        <li>DNI: <?=$dni?> </li>
         <li>Fecha de Nacimiento: <?=$fechaNac?></li>
-        <li>Correco Electrónico: <?=$email?> </li>
+        <li>Correo Electrónico: <?=$email?> </li>
     </ul>
 
     <?php 
         $consulta = 
-            "insert into alumnos (nombre,apellido1,apellido2,fecha_nac, email) values('$nombre','$apellido1', '$apellido2', '$fechaNac', '$email') ";
+            "insert into alumnos (nombre,apellido1,apellido2,fecha_nac, email, dni) values('$nombre','$apellido1', '$apellido2', '$fechaNac', '$email','$dni') ";
 
             /* $consulta = 
             'insert into alumnos (nombre,apellido1,apellido2,fecha_nac, email) values("'.$nombre.'","'.$apellido1.'", '$apellido2', '$fechaNac', '$email') ';*/

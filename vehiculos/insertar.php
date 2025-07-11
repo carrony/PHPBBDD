@@ -12,7 +12,7 @@ require_once('../plantillas/cabecera.php');
     $tipo = $_POST['tipo'];
     $color =  $_POST['color'];
     $fechaMat =  $_POST['fechaMat'];
-    $cilindrada = $_POST['cilindrada'];
+    $cilindrada = $_POST['cilindrada']; 
     $itv=0;
     $textoITV="No";
     if ( isset($_POST['itv'])  && $_POST['itv']=="on") {
